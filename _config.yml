@@ -1,10 +1,403 @@
 ---
-title: C3 Marketing Site Eu
-timezone: UTC
+title: 2020 C3 London
+timezone: America/New_York
 collections:
+  agenda:
+    title: Agenda
+    output: true
+    permalink: "/agenda/:title/"
   posts:
     title: Posts
     output: true
   uploads:
     title: Uploads
-    output: true
+    output: false
+defaults:
+- scope:
+    path: ''
+  values:
+    image: "/uploads/c3-na-2020-og-image.jpg"
+    has-introduction: false
+    introduction-background-color: bg-white
+    introduction-header: 
+    introduction-body: 
+    introduction-has-button: false
+    introduction-button-label: 
+    introduction-button-url: 
+    introduction-button-style: primary
+- scope:
+    path: ''
+    type: agenda
+  values:
+    description: 
+    modal:
+      url: 
+    event:
+      date: 
+      start-time: 
+      end-time: 
+    venue:
+      name: 
+      address: 
+      directions: 
+    speakers:
+      name: 
+      title: 
+      company: 
+    filter-date:
+      is-day-1: 
+      is-day-2: 
+      is-day-3: 
+      is-day-4: 
+    filter-time:
+      is-morning: 
+      is-daytime: 
+      is-evening: 
+    filter-type:
+      is-session-keynote: 
+      is-session-workshop: 
+      is-session-general: 
+      is-session-breakout: 
+    layout: page-agenda-single
+DIVIDER-1: Ignore This Field
+primary-navigation:
+- title: Agenda
+  url: "/agenda/"
+- title: Venue
+  url: "/venue/"
+- title: Networking
+  url: "/networking/"
+- title: Speakers
+  url: "/speakers/"
+- title: Sponsors
+  url: "/sponsors/"
+- title: CX Awards
+  url: "/cx-awards/"
+- title: FAQs
+  url: "/faqs/"
+- title: Contact Us
+  url: "/contact/"
+DIVIDER-2: Ignore This Field
+registration-url: http://www.cvent.com/d/qhqzh7/4W
+DIVIDER-3: Ignore This Field
+justify-trip-url: https://c3.clarabridge.com/wp-content/uploads/2019/06/clarabridge_conference-C3E2019_justify-trip-1.docx
+DIVIDER-4: Ignore This Field
+hero-background-image: "/uploads/c3-san-diego-header.jpg"
+hero-logo: "/uploads/c3-logo.png"
+hero-logo-alt: clarabridge logo
+hero-header: Clarabridge Customer Connections
+hero-dates: April 19-22, 2020
+hero-location: Hard Rock Hotel San Diego
+DIVIDER-5: Ignore This Field
+agenda-small-background-color: bg-cb-primary-100
+agenda-small-header: Agenda Highlights
+agenda-small-dates:
+- header: Sunday, April 19th
+  body: |+
+    Customer Day
+
+    Hands-On Trainings
+
+- header: Monday, April 20th
+  body: |-
+    Pre-Conference Workshops
+
+    Welcome Reception
+- header: Tuesday, April 21st
+  body: |-
+    Keynotes
+
+    General Sessions
+
+    Breakout Sessions
+
+    Panels
+
+    Connections Reception
+- header: Wednesday, April 22nd
+  body: |-
+    Keynotes
+
+    General Sessions
+
+    Breakout Sessions
+
+    Panels
+
+    CX Awards
+agenda-small-has-button: true
+agenda-small-button-label: See Full Agenda
+agenda-small-button-url: "/agenda/"
+agenda-small-button-style: primary
+DIVIDER-6: Ignore This Field
+2020-keynote-speakers-header: 2020 Keynote Speakers
+2020-keynote-speakers:
+- image: "/uploads/speaker-mark-bishof.png"
+  image-alt: portrait of mark bishof
+  name: Mark Bishof
+  title: CEO
+  company: Clarabridge
+- image: "/uploads/speaker-sid-banerjee.png"
+  image-alt: portrait of sid banerjee
+  name: Sid Banerjee
+  title: Executive Vice Chairman, Founder & Chief Strategy Officer
+  company: Clarabridge
+- image: "/uploads/speaker-fabrice-martin.png"
+  image-alt: portrait for fabrice martin
+  name: Fabrice Martin
+  title: Chief Product Officer
+  company: Clarabridge
+DIVIDER-7: Ignore This Field
+2020-general-speakers-header: 2020 Speakers
+2020-general-speakers:
+- image: "/uploads/logo-bcbskc.png"
+  image-alt: logo for blue cross blue shield kansas city
+  name: Rusty John
+  title: Senior Business Analyst
+  company: Blue Cross Blue Shield of Kansas City
+- image: "/uploads/logo-progressive.png"
+  image-alt: logo for progressive
+  name: Michael Molnar
+  title: 'Social Media Specialist '
+  company: Progressive Insurance
+- image: "/uploads/logo-hcsc.png"
+  image-alt: logo for hcsc
+  name: Robert Holloway
+  title: Senior Business Solutions Owner
+  company: HCSC
+- image: "/uploads/logo-mutual-of-omaha.png"
+  image-alt: logo for mutual of omaha
+  name: Justin Meyers
+  title: Customer Experience Leader
+  company: Mutual of Omaha
+- image: "/uploads/logo-indeed.png"
+  image-alt: logo for indeed
+  name: Noel Holmes
+  title: Senior Director, Voice of the Customer
+  company: Indeed
+- image: "/uploads/logo-united.png"
+  image-alt: logo for united airlines
+  name: Rajeev D'Souza
+  title: Director, Analytics & Insights Global Operations
+  company: United Airlines
+- image: "/uploads/logo-united.png"
+  image-alt: logo for united airlines
+  name: Ryan Neuhaus
+  title: Manager, Customer Insights
+  company: United Airlines
+- image: "/uploads/forrester-logo-circle-v2.png"
+  image-alt: logo for forrester
+  name: Faith Adams
+  title: Analyst Serving Customer Experience Professionals
+  company: Forrester Research
+- image: "/uploads/logo-presbytarian.png"
+  image-alt: 
+  name: Soyal Momin
+  title: Senior Vice President, Data and Analytics
+  company: Presbyterian Healthcare Services
+- image: "/uploads/logo-ihg.png"
+  image-alt: logo for ihg
+  name: "Diane Shurtleff\t"
+  title: VOC Data Analyst
+  company: InterContinental Hotels Group
+- image: "/uploads/logo-ihg.png"
+  image-alt: logo for ihg
+  name: "April Williams\t"
+  title: Director, Business Innovations, Global Reservations and Customer Care
+  company: InterContinental Hotels Group
+- image: "/uploads/logo-ihg.png"
+  image-alt: logo for ihg
+  name: Robby Morehead
+  title: Manager, VoC & Coaching Tools
+  company: InterContinental Hotels Group
+DIVIDER-8: Ignore This Field
+2019-past-speakers-header: Past Speakers
+2019-past-speakers:
+- image: "/uploads/logo-adobe.png"
+  image-alt: logo for adobe
+- image: "/uploads/logo-fidelity.png"
+  image-alt: logo for fidelity
+- image: "/uploads/logo-sams-club.png"
+  image-alt: logo for sams club
+- image: "/uploads/logo-shark-ninja.png"
+  image-alt: logo for shark ninja
+- image: "/uploads/logo-united.png"
+  image-alt: logo for united
+- image: "/uploads/logo-usa-today.png"
+  image-alt: logo for usa today
+- image: "/uploads/logo-usbank.png"
+  image-alt: logo for usbank
+- image: "/uploads/logo-vera-bradley.png"
+  image-alt: logo for vera bradley
+- image: "/uploads/logo-vmware.png"
+  image-alt: logo for vmware
+- image: "/uploads/logo-whirlpool.png"
+  image-alt: logo for whirlpool
+DIVIDER-9: Ignore This Field
+award-winners-header: Past Winners
+award-winners:
+- image: "/uploads/logo-aarp.png"
+  image-alt: logo for aarp
+- image: "/uploads/logo-accenture.png"
+  image-alt: logo for accenture
+- image: "/uploads/logo-adp.png"
+  image-alt: logo for adp
+- image: "/uploads/logo-capital-one.png"
+  image-alt: logo for capital-one
+- image: "/uploads/logo-cibc.png"
+  image-alt: logo for cibc
+- image: "/uploads/logo-dell.png"
+  image-alt: logo for dell
+- image: "/uploads/logo-expedia-inc.png"
+  image-alt: logo for expedia
+- image: "/uploads/logo-hcsc.png"
+  image-alt: logo for hcsc
+- image: "/uploads/logo-ihg.png"
+  image-alt: logo for ihg
+- image: "/uploads/logo-orbitz.png"
+  image-alt: logo for orbitz
+- image: "/uploads/logo-usaa.png"
+  image-alt: logo for usaa
+- image: "/uploads/logo-whirlpool.png"
+  image-alt: logo for whirlpool
+DIVIDER-10: Ignore This Field
+agenda-filter-time-of-day:
+- filter: ".morning"
+  class: morning
+  text-1: <i class="fad fa-sunrise"></i> Morning
+- filter: ".daytime"
+  class: daytime
+  text-1: <i class="fad fa-sun"></i> Daytime
+- filter: ".evening"
+  class: evening
+  text-1: <i class="fad fa-sunset"></i> Evening
+agenda-filter-date:
+- filter: ".day-1"
+  class: day-1
+  text-1: Sunday, April 19th
+- filter: ".day-2"
+  class: day-2
+  text-1: Monday, April 20th
+- filter: ".day-3"
+  class: day-3
+  text-1: Tuesday, April 21st
+- filter: ".day-4"
+  class: day-4
+  text-1: Wednesday, April 22nd
+agenda-filter-type:
+- filter: ".session-keynote"
+  class: session-keynote
+  text-1: <i class="fad fa-tags"></i> Keynote
+- filter: ".session-workshop"
+  class: session-workshop
+  text-1: <i class="fad fa-tags"></i> Workshop
+- filter: ".session-general"
+  class: session-general
+  text-1: <i class="fad fa-tags"></i> General
+- filter: ".session-breakout"
+  class: session-breakout
+  text-1: <i class="fad fa-tags"></i> Breakout
+  Key: 
+DIVIDER-11: Ignore This Field
+networking-receptions-header: Networking Receptions
+networking-receptions:
+- image: "/uploads/float-2.jpg"
+  image-alt: provide description of the image
+  title: Welcome Reception
+  location: Float Rooftop Bar at Hard Rock Hotel San Diego
+  location-url: 
+  day: Monday, April 20
+  time: 6:00 - 9:00 PM
+  body: What better way to kick off C3 2020 than by enjoying cocktails and dinner,
+    all while networking with your peers! Chat with Clarabridge experts and partners,
+    exchange ideas, and make lasting connections.
+- image: "/uploads/1980100_683464188382834_794233833_o.jpg"
+  image-alt: provide description of the image
+  title: Connections Reception
+  location: 'Petco Park '
+  location-url: 
+  day: Tuesday, April 21
+  time: 7:00 - 10:00 PM
+  body: Join us Tuesday evening for a night of cocktails, food, networking and entertainment.
+    Trust us, this is something you don’t want to miss!
+DIVIDER-12: Ignore This Field
+venue-header: Venue & Accomodations
+venue:
+- image: "/uploads/c3-venue-hard-rock.jpg"
+  image-alt: provide description of the image
+  name: Hard Rock Hotel San Diego
+  body: "### Venue\n\nC3 2020 will be hosted at the Hard Rock Hotel San Diego, located
+    in the heart of downtown in the famed Gaslamp Quarter. With contemporary and chic
+    design, and tons of unique features, you’re not just treated like a guest, you’re
+    treated like a rock star.  \n\n### Accommodations\n\nA special room rate of $249
+    per night has been secured exclusively for C3 attendees. Please note there are
+    a limited number of rooms available, so be sure to book your reservation as soon
+    as possible. "
+  has-button: true
+  button-url: "/venue/"
+  button-label: Find Out More
+DIVIDER-13: Ignore This Field
+contact-background-color: bg-white
+contact-header: Contact Us
+contact-button-label: Get in Touch
+contact-button-url: mailto:events@clarabridge.com
+contact-button-style: primary
+contact-employees:
+- name: Keri Cook
+  title: VP, Demand Gen
+  email-url: mailto:events@clarabridge.com
+  email-label: Email
+- name: Kendall Sampson
+  title: Manager, Demand Gen
+  email-url: mailto:events@clarabridge.com
+  email-label: Email
+- name: Kaitlin Beazell
+  title: Senior Marketing Coordinator
+  email-url: mailto:events@clarabridge.com
+  email-label: Email
+DIVIDER-14: Ignore This Field
+exclude:
+- package.json
+- package-lock.json
+- Gemfile
+- Gemfile.lock
+- node_modules
+- netlify.toml
+- README.md
+- vendor
+- ".bundle"
+plugins:
+- jekyll-seo-tag
+- jekyll-sitemap
+- jekyll-feed
+author: Clarabridge
+lang: en_US
+logo: "/uploads/cb-logo-horizontal.svg"
+social:
+  name: Clarabridge
+  links:
+  - https://twitter.com/clarabridge/
+  - https://www.facebook.com/Clarabridge/
+  - https://www.linkedin.com/company/clarabridge/
+  - https://www.youtube.com/channel/UCq3eNnwPsrO9Wlf6o86ccHw
+twitter:
+  username: clarabridge
+  card: summary
+markdown: kramdown
+kramdown:
+  smart_quotes: apos,apos,quot,quot
+  typographic_symbols:
+    hellip: "..."
+permalink: pretty
+encoding: utf-8
+description: Clarabridge Customer Connections (C3), our electrifying four-day conference
+  is kicking off in San Diego, April 19 - 22, 2020. Hear from industry experts, thought
+  leaders, and top practitioners in customer experience (CX) and digital customer
+  service leaders for examples and best practices needed to say ahead of the curve.
+url: 
+baseurl: 
+domain: 
+repo: https://github.com/marcusrelacion/c3-marketing-site
+sass:
+  sass_dir: "/assets/styles/"
+  style: compressed
