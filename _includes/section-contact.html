@@ -1,0 +1,49 @@
+<section class="section section--contact {{ page.contact-background-color }}">
+    <div class="section__content">
+        {% if page.url == "/contact/" %}
+        {% comment %}
+        Show the events team contact information on the contact page
+        {% endcomment %}
+        <h2 class="section__header">
+            {{ site.contact-header }}
+        </h2>
+        <ul class="section__body listing listing--three-column">
+            {% for employee in site.contact-employees %}
+            <li class="listing__item">
+                <div class="listing__details">
+                    <h3 class="listing__header">
+                        {{ employee.name }}
+                    </h3>
+                    <p class="listing__title">
+                        {{ employee.title }}
+                    </p>
+                    <a class="listing__button button button--primary" href="{{ employee.email-url }}">
+                        {{ employee.email-label }}
+                    </a>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+        {% elsif page.url == "/sponsors/" %}
+        {% comment %}
+        Show the custom contact information on the sponsors page
+        {% endcomment %}
+        <h2 class="section__header">
+            {{ page.contact-header }}
+        </h2>
+        <a class="section__button button button--primary" href="{{ page.contact-button-url }}">
+            {{ page.contact-button-label }}
+        </a>
+        {% else %}
+        {% comment %}
+        Show the default contact information on all pages
+        {% endcomment %}
+        <h2 class="section__header">
+            {{ site.contact-header }}
+        </h2>
+        <a class="section__button button button--primary" href="{{ site.contact-button-url }}">
+            {{ site.contact-button-label }}
+        </a>
+        {% endif %}
+    </div>
+</section>

@@ -1,0 +1,39 @@
+.agenda-small {
+	padding: 32px 16px;
+	text-align: center;
+
+	&__content {
+		margin: auto;
+		max-width: 1280px;
+	}
+
+	&__days {
+		display: grid;
+		grid-gap: 16px;
+		grid-template-columns: 1fr;
+		padding: 32px 0;
+	}
+
+	&__day {
+		background-color: $white;
+		border: solid 1px $charcoal-200;
+		border-radius: 2px;
+		padding: 32px 16px;
+	}
+
+}
+
+@media screen and (min-width:959px) {
+	.agenda-small {
+		&__days {
+			grid-gap: 32px;
+			grid-template-columns: repeat(4, 1fr);
+		}
+
+		&__day {
+			padding: 64px 16px;
+		}
+
+	}
+
+}

@@ -1,0 +1,252 @@
+<!-- listing -->
+<ul class="agenda__events listing listing__agenda mixitup-container">
+    {% for post in site.agenda | sort: "post.date" %}
+        <!-- agenda-event -->
+        <li class="
+
+        agenda__event mix 
+        
+        {% if post.filter-date.is-day-1 == true %} day-1 
+        {% elsif post.filter-date.is-day-2 == true %} day-2 
+        {% elsif post.filter-date.is-day-3 == true %} day-3 
+        {% elsif post.filter-date.is-day-4 == true %} day-4 
+        {% endif %} 
+
+        {% if post.filter-time.is-morning == true %} morning 
+        {% elsif post.filter-time.is-daytime == true %} daytime 
+        {% elsif post.filter-time.is-evening == true %} evening 
+        {% endif %} 
+        
+        {% if post.filter-type.is-session-keynote == true %} session-keynote 
+        {% elsif post.filter-type.is-session-workshop == true %} session-workshop 
+        {% elsif post.filter-type.is-session-general == true %} session-general
+        {% elsif post.filter-type.is-session-breakout == true %} session-breakout
+        {% elsif post.filter-type.is-session-contactcenter == true %} session-contactcenter
+        {% elsif post.filter-type.is-session-cxhub == true %} 
+        session-cxhub
+        {% comment %}
+        {% elsif post.filter-type.is-reception == true %} reception 
+        {% elsif post.filter-type.is-track-customer == true %} track-customer 
+        {% elsif post.filter-type.is-track-product == true %} track-product 
+        {% endcomment %}
+        {% endif %} 
+
+        ">
+            <!-- modal trigger -->
+            {% if post.modal.url %}
+            <a class="js-modal-trigger js-modal-trigger--active" data-modal="#{{ post.modal.url }}">
+            {% else %}
+            <a class="js-modal-trigger js-modal-trigger--inactive">
+            {% endif %}
+                <!-- agenda-content -->
+                <div class="agenda__event-content">
+                    <!-- agenda-details -->
+                    <div class="agenda__event-details">
+                        <div class="agenda__event-date">
+                            <i class="fas fa-clock">
+                            </i>
+                            {{ post.event.date | date: "%A, %B %d" }} |
+                            <time datetime="{{ post.event.start-time }}">
+                                {{ post.event.start-time }}
+                            </time>
+                            {% if post.event.end-time %}
+                                -
+                                <time datetime="{{ post.event.end-time }}">
+                                    {{ post.event.end-time }}
+                                </time>
+                            {% endif %}
+                        </div>
+                        <div class="agenda__event-type agenda__event-type--{% if post.filter-type.is-session-keynote == true %}session-keynote 
+                        {% elsif post.filter-type.is-session-workshop == true %}session-workshop 
+                        {% elsif post.filter-type.is-session-general == true %}session-general 
+                        {% elsif post.filter-type.is-session-breakout == true %}session-breakout
+                        {% elsif post.filter-type.is-session-contactcenter == true %}session-contactcenter 
+                        {% elsif post.filter-type.is-session-cxhub == true %}session-cxhub
+                        {% comment %}
+                        {% elsif post.filter-type.is-reception == true %}reception 
+                        {% elsif post.filter-type.is-track-customer == true %}track-customer 
+                        {% elsif post.filter-type.is-track-product == true %}track-product 
+                        {% endcomment %}
+                        {% endif %} 
+                        ">
+                        <p>
+                            <i class="fad fa-tags"></i>
+                            {% if post.filter-type.is-session-keynote == true %} Keynote
+                            {% elsif post.filter-type.is-session-workshop == true %} Workshop
+                            {% elsif post.filter-type.is-session-general == true %} General
+                            {% elsif post.filter-type.is-session-breakout == true %} Breakout
+                            {% elsif post.filter-type.is-session-contactcenter == true %} Contact Center
+                            {% elsif post.filter-type.is-session-cxhub == true %} CX Hub
+                            {% comment %}
+                            {% elsif post.filter-type.is-reception == true %} Reception
+                            {% elsif post.filter-type.is-track-customer == true %} Customer
+                            {% elsif post.filter-type.is-track-product == true %} Product
+                            {% endcomment %}
+                            {% endif %}
+                        </p>
+                        </div>
+                    </div>
+                    <!-- agenda-title -->
+                    <div class="agenda-event__title">
+                        <h2>
+                            {{ post.title }}
+                        </h2>
+
+                                        <div>
+                    {% if post.modal.url %}
+                    <p>View More</p>
+                    {% endif %}
+                </div>
+                    </div>
+                </div>
+            </a>
+            <!-- end modal trigger -->
+        </li>
+        <!-- end agenda event -->
+        
+        <!-- modal -->
+        <div class="agenda-event__modal modal" data-modal-window="" id="{{ post.modal.url }}">
+            <!-- agenda-content -->
+            <div class="agenda__event-content">
+                <!-- agenda-toolbar -->
+                <div class="agenda-event__toolbar">
+                    <button class="close" data-modal-close="">
+                        Close <i class="fas fa-times-circle"></i>
+                    </button>
+                </div>
+                <!-- agenda-details -->
+                <div class="agenda__event-details">
+                    <div class="agenda__event-date">
+                        <i class="fas fa-clock"></i>
+                        {{ post.event.date | date: "%A, %B %d" }} |
+                        <time datetime="{{ post.event.start-time }}">
+                            {{ post.event.start-time }}
+                        </time>
+                        -
+                        <time datetime="{{ post.event.end-time }}">
+                            {{ post.event.end-time }}
+                        </time>
+                    </div>
+                    <div class="
+                    agenda__event-type agenda__event-type--{% if post.filter-type.is-session-keynote == true %}session-keynote {% elsif post.filter-type.is-session-workshop == true %}session-workshop 
+                    {% elsif post.filter-type.is-session-general == true %}session-general 
+                    {% elsif post.filter-type.is-session-breakout == true %}session-breakout 
+                    {% comment %}
+                    {% elsif post.filter-type.is-reception == true %}reception 
+                    {% elsif post.filter-type.is-track-customer == true %}track-customer 
+                    {% elsif post.filter-type.is-track-product == true %}track-product 
+                    {% endcomment %}
+                    {% endif %} 
+                    ">
+                        <p>
+                            <i class="fad fa-tags"></i>
+                            {% if post.filter-type.is-session-keynote == true %}Keynote
+                            {% elsif post.filter-type.is-session-workshop == true %}Workshop
+                            {% elsif post.filter-type.is-session-general == true %}General
+                             {% elsif post.filter-type.is-session-breakout == true %}Breakout
+                            {% comment %}
+                            {% elsif post.filter-type.is-reception == true %}Reception
+                            {% elsif post.filter-type.is-track-customer == true %}Customer
+                            {% elsif post.filter-type.is-track-product == true %}Product
+                            {% endcomment %}
+                            {% endif %}
+                        </p>
+                    </div>
+                </div>
+                <!-- agenda-title -->
+                <div class="agenda-event__title">
+                    <h2>
+                        {{ post.title }}
+                    </h2>
+                </div>
+                <!-- agenda-summary -->
+                <div class="agenda-event__summary">
+                    {{ post.content | markdownify }}
+                </div>
+      
+                <!-- agenda-speakers -->
+                {% comment %}
+                If the name of a Speaker is not provided, the event venue block will not be visible.
+                {% endcomment %}
+                <div class="agenda-event__speakers">
+            
+                    {% if post.speakers.name %}
+                    <h3>Speakers</h3>
+                    {% endif %}
+                    
+                    <ul class="listing listing__agenda-speakers">
+                        {% for speaker in post.speakers %}
+                        <li class="listing__agenda-speaker">
+                            <h4>
+                                {{ speaker.name }}
+                            </h4>
+                            <p class="italic">
+                                {{ speaker.title }}
+                            </p>
+                            <p>
+                                {{ speaker.company }}
+                            </p>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                
+                {% if post.venue.name %}
+                {% comment %}
+                If the name of a Venue is not provided, the event venue block will not be visible.
+                {% endcomment %}
+                <!-- agenda-venue -->
+                <div class="agenda-event-venue">
+                    <h3>
+                        Location:
+                    </h3>
+                    <p>
+                        {{ post.venue.name }}
+                    </p>
+                </div>
+                {% endif %}
+                {% comment %}
+                Not sure why the site isn't generating pages for agenda...
+                <!-- agenda-share -->
+                <div class="agenda-event__share">
+                    <a href="{{ post.url }}" target="_blank" rel="noopener">
+                        <i class="fas fa-map-marker-alt">
+                        </i>
+                        Permalink
+                    </a>
+                </div>
+                {% endcomment %}
+            </div>
+        </div>
+        <!-- end modal -->
+    {% endfor %}
+</ul>
+<!-- end listing -->
+
+<script src="/assets/scripts/vendor/mixitup.min.js">
+</script>
+<script src="/assets/scripts/vendor/mixitup-multifilter.min.js">
+</script>
+<script src="/assets/scripts/vendor/modals.min.js">
+</script>
+<script>
+    var containerEl = document.querySelector('.mixitup-container');
+    var mixer = mixitup(containerEl, {
+        multifilter: {
+            enable: true
+        },
+        animation: {
+            enable: false
+        }
+    });
+</script>
+<script>
+    modals.init({
+        modalActiveClass: 'active', // Class applied to active modal windows
+        modalBGClass: 'modal-bg', // Class applied to the modal background overlay
+        preventBGScroll: true, // Boolean, prevents background content from scroll if true
+        preventBGScrollHtml: true, // Boolean, adds overflow-y: hidden to <html> if true (preventBGScroll must also be true)
+        preventBGScrollBody: true, // Boolean, adds overflow-y: hidden to <body> if true (preventBGScroll must also be true)
+        backspaceClose: true, // Boolean, whether or not to enable backspace/delete button modal closing
+    });
+</script>

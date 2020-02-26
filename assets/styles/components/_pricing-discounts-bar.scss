@@ -1,0 +1,40 @@
+.pricing-bar {
+	background-color: $white;
+	border: solid 4px $charcoal-100;
+	border-radius: 4px;
+	padding: 16px;
+	text-align: center;
+
+	&__header {
+		margin-bottom: 16px;
+	}
+
+	&__discounts {
+		display: grid;
+		grid-gap: 16px;
+		grid-template-columns: 1fr;
+	}
+
+	&__discount {
+		align-items: center;
+		display: flex;
+		flex-direction: row;
+		text-align: center;
+		margin: auto;
+	}
+
+	&__discount-icon {
+		margin-right: 8px;
+	}
+
+}
+
+@media screen and (min-width:767px) {
+	.pricing-bar {
+		&__discounts {
+			grid-template-columns: repeat(3, 1fr);
+		}
+
+	}
+
+}

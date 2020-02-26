@@ -1,0 +1,129 @@
+.agenda__filter form {
+    padding: 32px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 88px;
+}
+
+.events-filter {
+    border: none;
+    margin-bottom: 32px;
+}
+
+/* date filters */
+.events-filter__dates {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+}
+
+.events-filter__dates .mixitup-control-active {
+    background-color: $cb-primary-400;
+    color: $white;
+}
+
+.events-filter__dates .control-text-1,
+.events-filter__dates .control-text-2,
+.events-filter__dates .control-text-3 {
+    display: block;
+    font-size: 1rem;
+    text-align: left;
+}
+
+/* additional filters */
+.events-filter__additional-filters {
+    background-color: $cb-primary-400;
+    padding: 8px;
+    display: none;
+}
+
+.events-filter__additional-header {
+    display: flex;
+    align-items: center;
+}
+
+.events-filter__additional-title {
+    flex-grow: 1;
+}
+
+.events-filter__reset {
+    flex-grow: 0;
+    text-align: right;
+}
+
+.events-filter__additional-content {
+    border-top: solid 2px $cb-primary-400;
+    margin-top: 8px;
+    padding: 8px 0;
+}
+
+.events-filter__additional-content .control-group {
+    margin-top: 8px;
+}
+
+.events-filter__additional-content p {
+    margin-bottom: 8px;
+}
+
+.events-filter__additional-content .column:not(:last-of-type) {
+    border-right: solid 2px $cb-primary-400;
+}
+
+.control {
+    background: none;
+    border: none;
+    cursor: pointer;
+    flex-grow: 1;
+    color: $charcoal-400;
+    padding: 8px;
+    transition: background 150ms;
+}
+
+.mix-it-up-container {
+    overflow: hidden;
+    position: relative;
+}
+
+.mixitup-container {
+    position: relative;
+}
+
+.mixitup-container-failed::after {
+    content: 'No results, please refine your search';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 32px;
+}
+
+.events__list {
+    display: grid;
+    grid-gap: 32px;
+    grid-template-columns: 1fr;
+}
+
+@media screen and (min-width:767px) {
+    .events-filter__date-button {
+        width: auto;
+    }
+
+    /* listing */
+    .events__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media screen and (min-width:1023px) {
+    .events-filter__additional-filters {
+        display: block;
+    }
+
+    /* listing */
+    .events__list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}

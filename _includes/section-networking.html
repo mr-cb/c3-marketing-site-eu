@@ -1,0 +1,41 @@
+<section class="section section--networking" style="background-color: white;">
+
+    <div class="section__content">
+
+        <h2 class="section__header">
+            {{ site.networking-receptions-header }}
+        </h2>
+
+        <ul class="networking-receptions">
+            {% for reception in site.networking-receptions %}
+            <li class="networking-reception">
+                <img alt="{{ speaker.image-alt }}" class="networking-reception__image" src="{{ reception.image }}" />
+                <div class="networking-reception__details">
+                    <h3 class="networking-reception__name">
+                        {{ reception.title }}
+                    </h3>
+                    <p class="networking-reception__location">
+                        {% if reception.location-url %}
+                        <a href="{{ reception.location-url }}" target="_blank" rel="noopener"><i
+                                class="fad fa-map-marker-alt"></i> {{ reception.location }}</a>
+                        {% else %}
+                        <p><i class="fad fa-map-marker-alt"></i> {{ reception.location }}</p>
+                        {% endif %}
+                    </p>
+                    <p class="networking-reception__date">
+                        <i class="fad fa-calendar-day"></i> {{ reception.day }}
+                    </p>
+                    <p class="networking-reception__time">
+                        <i class="fad fa-clock"></i> {{ reception.time }}
+                    </p>
+                    <p class="networking-reception__body wysiwyg">
+                        {{ reception.body }}
+                    </p>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+
+    </div>
+
+</section>

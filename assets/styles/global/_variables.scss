@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i,800&display=swap');
+@import url("https://fast.fonts.net/lt/1.css?apiType=css&c=813045a2-bdea-49fe-984d-1e1712d89aaa&fontids=1475508,1475556");
+
+@font-face {
+	font-family: "Avenir Book";
+	src: url("https://www.clarabridge.com/wp-content/themes/clarabridge-08202019/fonts/generated/Avenir-Book.eot?#iefix");
+	src: url("https://www.clarabridge.com/wp-content/themes/clarabridge-08202019/fonts/generated/Avenir-Book.eot?#iefix") format("eot"), url("https://www.clarabridge.com/wp-content/themes/clarabridge-08202019/fonts/generated/Avenir-Book.woff2") format("woff2"), url("https://www.clarabridge.com/wp-content/themes/clarabridge-08202019/fonts/generated/Avenir-Book.woff") format("woff"), url("https://www.clarabridge.com/wp-content/themes/clarabridge-08202019/fonts/generated/Avenir-Book.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Avenir Black";
+	src: url("https://www.clarabridge.com/wp-content/themes/clarabridge-08202019/fonts/generated/Avenir-Black.eot?#iefix");
+	src: url("https://www.clarabridge.com/wp-content/themes/clarabridge-08202019/fonts/generated/Avenir-Black.eot?#iefix") format("eot"), url("https://www.clarabridge.com/wp-content/themes/clarabridge-08202019/fonts/generated/Avenir-Black.woff2") format("woff2"), url("https://www.clarabridge.com/wp-content/themes/clarabridge-08202019/fonts/generated/Avenir-Black.woff") format("woff"), url("https://www.clarabridge.com/wp-content/themes/clarabridge-08202019/fonts/generated/Avenir-Black.ttf") format("truetype");
+}
+
+$white: #ffffff;
+$charcoal-100:#ECEEEF;
+$charcoal-200:#B5BBBF;
+$charcoal-300:#8F99A0;
+$charcoal-400:#455560;
+$charcoal-500:#303A40;
+$charcoal-600:#262C31;
+$cb-primary-100:#F0F6FD;
+$cb-primary-200:#C2D9F5;
+$cb-primary-300:#A4C6F0;
+$cb-primary-400:#77A4E3;
+$cb-primary-500:#456791;
+$cb-primary-600:#334A66;/* z-index */
+$index-1:10;
+$index-2:100;
+$index-3:1000;
+$index-4:10000;
+$index-5:100000;
+$sans: 'Avenir', sans-serif;
+$font-size-1:3rem;
+// 48px
+$font-size-2:2.5rem;
+// 40px
+$font-size-3:2rem;
+// 32px
+$font-size-4:1.5rem;
+// 24px
+$font-size-5:1.25rem;
+// 20px
+$font-size-6:1rem;
+// 16px
+$font-size-7:0.875rem;
+// 14px

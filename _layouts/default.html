@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include doctype/head.html %}
+
+<!-- begin: off-canvas navigation  -->
+<nav id="my-menu" aria-label="offside-menu">
+	<ul>
+		{% for link in site.primary-navigation %}
+		<li>
+			<a class="button button--inverse {{ link.class }}" href="{{ link.url }}">
+				{{ link.title }}
+			</a>
+		</li>
+		{% endfor %}
+	</ul>
+</nav>
+<!-- end: off-canvas navigation  -->
+
+<body>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PC9DNTK" height="0" width="0"
+			style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+
+	<!-- begin: site-content -->
+	{% include site-content.html %}
+	<!-- end: site-content -->
+
+	<script>
+		//Offside.js minimal setup
+		var myOffside = offside('#my-menu', {
+			buttonsSelector: '#my-button, .another-button', // Global offside options: affect all offside instances
+			slidingElementsSelector: '#my-content-container', // String: Sliding elements selectors ('#foo, #bar')
+			debug: false,
+			slidingSide: 'right',
+			beforeOpen: function () { },
+			beforeClose: function () { },
+		});
+
+		var overlay = document.querySelector('.site-overlay')
+			.addEventListener('click', window.offside.factory.closeOpenOffside);
+	</script>
+</body>
+
+</html>

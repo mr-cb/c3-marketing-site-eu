@@ -1,0 +1,14 @@
+---
+title: 'Break: C3 Zone'
+date: 2020-04-22 00:00:00 -04:00
+position: 35
+event:
+  date: 2020-04-22 00:00:00 -04:00
+  start-time: 10:45 AM
+  end-time: 11:00 AM
+filter-time:
+  is-daytime: true
+filter-type:
+  is-session-general: true
+---
+

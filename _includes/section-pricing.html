@@ -1,0 +1,11 @@
+{% if page.has-pricing == true %}
+<section class="section section--pricing {{ page.pricing-background-color }}">
+    <div class="section__content">
+        <h2 class="section__header">
+            {{ page.pricing-header }}
+        </h2>
+        {% include component-pricing-table.html %}
+        {% include component-pricing-discounts.html %}
+    </div>
+</section>
+{% endif %}

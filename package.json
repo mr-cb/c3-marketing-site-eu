@@ -1,0 +1,23 @@
+{
+  "name": "c3-marketing-site-eu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "netlify:dev": "netlify dev --live",
+    "jekyll:serve": "bundle exec jekyll serve --livereload",
+    "jekyll:build": "bundle exec jekyll build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mr-cb/c3-marketing-site-eu.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mr-cb/c3-marketing-site-eu/issues"
+  },
+  "homepage": "https://github.com/mr-cb/c3-marketing-site-eu#readme",
+  "dependencies": {}
+}

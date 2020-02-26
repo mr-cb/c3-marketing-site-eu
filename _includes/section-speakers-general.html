@@ -1,0 +1,67 @@
+<section
+  class="block block--speakers {{ page.speakers-general-background-color }} bg-cb-primary-100"
+>
+  <div class="block__content">
+    <h2 class="block__header">
+      {{ site.2020-general-speakers-header }}
+    </h2>
+    <ul class="listing listing--three-column">
+      {% comment %} 
+      Displays all speakers in the 2020 General Speakers collection
+      {% endcomment %} 
+      {% if page.url == "/" %}
+        {% for speaker in site.2020-general-speakers limit: 6 %}
+          <li class="speaker speaker--general">
+            <img
+              alt="{{ speaker.image-alt }}"
+              class="speaker__image"
+              src="{{ speaker.image }}"
+            />
+            {% comment %} 
+            Hide details on all pages except Speakers
+            {% endcomment %} 
+            {% if page.url == "/speakers/" %}
+            <div class="speaker__details">
+              <h3 class="speaker--name">
+                {{ speaker.name }}
+              </h3>
+              <p class="speaker__title">
+                {{ speaker.title }}
+              </p>
+              <p class="speaker__company">
+                {{ speaker.company }}
+              </p>
+            </div>
+            {% endif %}
+          </li>
+        {% endfor %}
+            {% else %}
+        {% for speaker in site.2020-general-speakers %}
+          <li class="speaker speaker--general">
+            <img
+              alt="{{ speaker.image-alt }}"
+              class="speaker__image"
+              src="{{ speaker.image }}"
+            />
+            {% comment %} 
+            Hide details on all pages except Speakers
+            {% endcomment %} 
+            {% if page.url == "/speakers/" %}
+            <div class="speaker__details">
+              <h3 class="speaker--name">
+                {{ speaker.name }}
+              </h3>
+              <p class="speaker__title">
+                {{ speaker.title }}
+              </p>
+              <p class="speaker__company">
+                {{ speaker.company }}
+              </p>
+            </div>
+            {% endif %}
+          </li>
+        {% endfor %}
+      {% endif %}
+    </ul>
+  </div>
+</section>
