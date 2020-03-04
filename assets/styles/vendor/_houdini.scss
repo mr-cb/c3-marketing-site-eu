@@ -1,0 +1,78 @@
+/*!
+ * houdinijs v11.0.2
+ * A simple collapse-and-expand script
+ * (c) 2019 Chris Ferdinandi
+ * MIT License
+ * http://github.com/cferdinandi/houdini
+ */
+
+/**
+ * Hide content
+ */
+
+.houdini {
+    display: none;
+    /**
+           * Remove focus styles from content
+           * @type {String}
+           */
+
+    /**
+       * Show expanded content
+       */
+}
+
+.houdini[tabindex="-1"]:focus {
+    outline: none;
+}
+
+.houdini.is-expanded {
+    display: block;
+    padding: 16px;
+    background-color: $white;
+    margin-top: -16px;
+}
+
+/**
+ * Remove button appearance from heading buttons
+ */
+.houdini-heading .houdini-toggle {
+    font-size: 1.4rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 2px;
+    transition: transform 100ms ease-in-out;
+    display: flex;
+    width: 100%;
+    cursor: pointer;
+    align-items: center;
+    padding: 32px 16px;
+    justify-content: space-between;
+    background-color: $white;
+    font-family: $sans;
+    text-align: left;
+}
+
+.is-expanded:not(:last-child),
+.houdini-heading:not(:last-of-type) {
+    margin-bottom: 16px;
+}
+
+/**
+ * Style icon
+ */
+.houdini-toggle {
+    background-color: transparent;
+    width: 32px;
+    font-size: 1.4rem;
+    border: none;
+}
+
+.houdini-toggle[aria-expanded=false]>i {
+    transition: transform 100ms ease-in-out;
+}
+
+.houdini-toggle[aria-expanded=true]>i {
+    transform: rotate(90deg);
+    transition: transform 100ms ease-in-out;
+}
