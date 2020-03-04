@@ -3,28 +3,17 @@ title: FAQs
 position: 7
 faqs:
 - heading: General Information
-  body: |-
-    ### What is C3?
-
-    The 12th annual Clarabridge Customer Connections (C3) conference is the leading event for customer experience management and digital customer service professionals. This 4-day event features a lineup of cutting-edge keynote speakers and more than 30 sessions featuring Clarabridge customers, partners, and analysts. The agenda is made up of 4 tracks, industry-specific sessions, as well as the opportunity for hands-on training with Clarabridge experts during advanced sessions for customers.
-
-    ### Where will C3 2020 take place?
-
-    C3 2020 will take place at the iconic [Hard Rock San Diego](http://www.hardrockhotelsd.com){:target="_blank"}{:rel="noopener"}
-
-    207 5th Avenue San Diego, CA. 92101
-
-    (619) 702-3000
-
-    ### When is C3 2020?
-
-    **Customer Day:** Sunday, April 19
-
-    **Pre-Conference Workshops:** Monday, April 20
-
-    **Welcome Reception:** Monday, April 20 at 6PM
-
-    **Main Conference:** Tuesday, April 21 – Wednesday, April 22
+  body: "### What is C3?\n\nClarabridge Customer Connections (C3), has been the leading
+    customer experience event for 12 years in North America, this being our sixth
+    C3 event in London. C3 2020 will feature cutting-edge keynote speakers and sessions
+    with customers, partners and analysts. Take advantage of our Pre-Conference Workshops
+    for hands-on training with Clarabridge experts, and some of the top minds in customer
+    experience.\n\n### Where will C3 2020 take place?\n\nC3 2020 will take place at
+    8 Northumberland Avenue in Central London.\n\n### When is C3 2020?\n\nOptional
+    Pre-Conference Workshops (pre-registration required) will take place on Monday,
+    9th June.\n \nC3 2020’s Welcome Reception will take place on Monday, 9th June.\n
+    \nThe main-conference days of C3 2020 will take place on Tuesday, 10th June and
+    Wednesday, 11th June at 8 Northumberland Avenue."
   trigger: section-1
   expanded: false
 - heading: Registration
@@ -36,14 +25,15 @@ faqs:
     situation-specific pricing questions. \n\n### What is the payment policy? \n\nThe
     easiest way to pay for your C3 registration is with a credit card through the
     online registration process. \n\n### What is the cancellation policy? \n\nYou
-    will receive a full refund if you cancel before March 15th. Cancellations received
-    after March 15th will not be eligible for a refund. To cancel a registration,
-    email [events@clarabridge.com](mailto:events@clarabridge.com) to let us know you
-    are unable to attend. **Please note, cancelling a registration does not automatically
-    cancel hotel and/or travel arrangements, you are responsible for cancelling any
-    accommodations.** \n\n### Can I transfer my registration to someone else? \n\nRegistrations
-    can be transferred to another individual at no charge until March 15th To transfer
-    a registration, email [events@clarabridge.com](mailto:events@clarabridge.com)
+    will receive a full refund if you cancel before 1st May. Cancellations received
+    after 1st May will not be eligible for a refund.\n \nTo cancel a registration,
+    email events@clarabridge.com to let us know you are unable to attend.\n \nCancelling
+    a registration does not automatically cancel hotel and/or travel arrangements,
+    you are responsible for cancelling any accommodations. **Please note, cancelling
+    a registration does not automatically cancel hotel and/or travel arrangements,
+    you are responsible for cancelling any accommodations.** \n\n### Can I transfer
+    my registration to someone else? \n\nRegistrations can be transferred to another
+    individual at no charge until 1st May. To transfer a registration, email events@clarabridge.com
     with the new registrant’s information (full name, email address, title, company)
     as well as the full name of whom they will be replacing. \n\n### How can I become
     a sponsor at C3 2020? \n\nWe offer a variety of sponsorship packages. To learn
@@ -51,33 +41,32 @@ faqs:
   trigger: section-2
   expanded: false
 - heading: Hotel & Travel
-  body: "### How long does it take to get to the hotel from the airport?  \n\nThe
-    Hard Rock Hotel San Diego is closest to [San Diego International Airport](https://www.san.org){:target=\"_blank\"}{:rel=\"noopener\"}
-    (approximately 4 miles from the Hard Rock Hotel San Diego). For ground transportation
-    options please visit [San Diego International Airport](https://www.san.org){:target=\"_blank\"}{:rel=\"noopener\"}.
-    \n\n### What kind of weather should I expect for C3? \n\nThe weather in San Diego
-    in late April is beautiful! Plan for daytime temperatures in the 70s, and evening
-    temperatures in the upper-50s. We recommend wearing layers as session rooms run
-    cooler. \n\n### Are there special hotel rates for C3? \n\nA discounted room rate
-    of of $249 per night has been secured at the Hard Rock Hotel San Diego. The discounted
-    rate is available exclusively to attendees until March 27, 2020\n(or when the
-    room block sells out). You can book your room [here](http://www.hardrockhotelsd.com/clarabridge-2020){:target=\"_blank\"}{:rel=\"noopener\"}.\n
-    \n \n### When should I book my travel home?  \n \nC3 will conclude around 3PM
-    on\nWednesday, April 22nd. \n\nAttendees are encouraged to stay until the end
-    since all sessions are extremely valuable and the CX Awards will be announced
-    at the conclusion of C3."
+  body: "### Is there a preferred airline for travel?\n\nNo, we have not made specific
+    arrangements with any airline.\n\n### How long does it take to get to 8 Northumberland
+    Avenue venue from the airport?\n\nHeathrow Airport is 1 hour by car. Gatwick Airport
+    is 1 hour and 30 minutes by car.\n\n### Which is the nearest tube station?\n\nCharing
+    Cross: Trafalgar Square exit\nEmbankment: Embankment Place exit\nLeicester Square:
+    Exit 1\n \n \n### What kind of weather should I expect for C3?\nThe weather in
+    June is wonderful, but be sure to bring a light sweater as the conference space
+    may be chilly. \n \n### Are there special hotel rates for C3?\nWe do not have
+    a room block for C3, however we have provided a list of hotels here that we recommend
+    located near 8 Northumberland Avenue. To make a reservation, please visit the
+    hotel websites or dial them directly. \n \n### When should I book my travel home?\nC3
+    will conclude around 3PM on Wednesday, 11th June. Attendees are encouraged to
+    stay until the end since all sessions are extremely valuable and the CX Awards
+    will be announced at the conclusion of C3."
   trigger: section-3
   expanded: false
 - heading: Food & Beverage
   body: |-
     ### Is food included with my pass?
 
-    Registration passes for the main conference (Tuesday, April 21st and Wednesday, April 22nd) include breakfast, snacks during breaks, lunch and dinner. The Hard Rock offers a variety of dining options as well.
+    Full Conference passes include breakfast, snacks during breaks and lunch. Pre-Conference Workshops include lunch and snacks during breaks.
   trigger: section-4
   expanded: false
 - heading: Agenda & Sessions
   body: "\n### What kind of sessions can I expect this year?  \nThe C3 agenda will
-    have 4 tracks again this year so bring your team and don’t miss out on these valuable
+    have 2 tracks again this year so bring your team and don’t miss out on these valuable
     sessions The agenda is constructed by Clarabridge customers, industry analysts\nand
     thought leaders. You can expect to: \n\n- Discover current and emerging trends
     from industry experts and thought leaders \n\n- Learn how to leverage CEM and
@@ -108,7 +97,7 @@ faqs:
 
     ### Do you offer any off-site transportation?
 
-    The Hard Rock Hotel San Diego does not offer off-site transportation. Any additional transportation off-site will be at your personal expense and coordination.
+    All planned conference events will take place at 8 Northumberland Avenue. Any transportation off-site will be at your personal expense and coordination.
   trigger: section-6
   expanded: false
 - heading: Stay Informed
