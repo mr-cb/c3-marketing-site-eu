@@ -20,3 +20,4 @@ contact-background-color: bg-cb-primary-100
 layout: page-venue
 ---
 
+We do not have a room block, however we have provided a list of hotels below that we recommend located near 8 Northumberland Avenue. To make a reservation, please visit the hotel websites or dial them directly. 
