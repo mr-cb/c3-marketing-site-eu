@@ -3,11 +3,10 @@ title: Home
 position: 0
 has-introduction: true
 introduction-background-color: bg-white
-introduction-body: Clarabridge Customer Connections (C3), our electrifying four-day
-  conference is kicking off in San Diego, April 19 - 22, 2020. Hear from industry
-  experts, thought leaders, and top practitioners in customer experience (CX) and
-  digital customer service leaders for examples and best practices needed to stay
-  ahead of the curve.
+introduction-body: Clarabridge Customer Connections (C3) Europe, our electrifying
+  two-day conference is is returning to London 9 - 11 June. Hear from industry experts,
+  thought leaders, and top practitioners in customer experience (CX) and digital customer
+  service leaders for examples and best practices needed to stay ahead of the curve.
 introduction-has-button: false
 has-agenda-small: true
 agenda-small-background-color: bg-cb-primary-100
