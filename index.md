@@ -45,18 +45,18 @@ pricing-background-color: bg-white
 pricing-header: Pricing & Discounts
 pricing-body: 
 pricing-table:
-- status: inactive
+- status: active
   type: early-bird-pricing
   header: Early Bird Pricing
-  price: "$999"
+  price: "£199"
   icon: <i class="fad fa-calendar-times"></i>
-  registration: Extended Through February 17, 2020
-- status: active
+  registration: Expires 30 April
+- status: inactive
   type: regular-pricing
   header: Regular Pricing
-  price: "$1,299"
+  price: "£299"
   icon: <i class="fad fa-calendar-check"></i>
-  registration: Begins February 18, 2020
+  registration: Begins 1 May
 pricing-has-discounts: true
 pricing-discounts-header: Group Discounts
 pricing-discounts-text: "Please [email](mailto:events@clarabridge.com) for information
