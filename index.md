@@ -13,18 +13,20 @@ agenda-small-background-color: bg-cb-primary-100
 agenda-small-header: Agenda Highlights
 has-speakers-keynote: false
 agenda-small-dates:
-- header: Sunday, April 19th
-  body: |+
-    Customer Day
-
-    Hands-On Trainings
-
-- header: Monday, April 20th
-  body: |-
+- header: 9th June
+  body: 
+- header: 10th June
+  body: |
     Pre-Conference Workshops
 
+    Keynotes
+
+    General Sessions
+
+    Breakout Sessions
+
     Welcome Reception
-- header: Tuesday, April 21st
+- header: 11th June
   body: |-
     Keynotes
 
@@ -33,19 +35,6 @@ agenda-small-dates:
     Breakout Sessions
 
     Panels
-
-    Connections Reception
-- header: Wednesday, April 22nd
-  body: |-
-    Keynotes
-
-    General Sessions
-
-    Breakout Sessions
-
-    Panels
-
-    CX Awards
 agenda-small-has-button: false
 agenda-small-button-label: See Full Agenda
 agenda-small-button-url: "/agenda/"
