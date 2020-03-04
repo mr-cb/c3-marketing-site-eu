@@ -1,5 +1,5 @@
 ---
-title: Venue
+title: Lodging
 position: 2
 has-venue: true
 venue:
