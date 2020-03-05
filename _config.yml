@@ -63,8 +63,8 @@ DIVIDER-1: Ignore This Field
 primary-navigation:
 - title: Agenda
   url: "/agenda/"
-- title: Venue
-  url: "/venue/"
+- title: Lodging
+  url: "/lodging/"
 - title: Networking
   url: "/networking/"
 - title: Speakers
