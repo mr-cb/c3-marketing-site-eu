@@ -1,0 +1,18 @@
+{% if page.has-award-winners == true %}
+<section class="section section--award-winners {{ page.award-winners-past-background-color }}">
+    <div class="section__content">
+        <h2 class="section__header">
+            {{ site.award-winners-header }}
+        </h2>
+        <ul class="listing listing--four-column">
+            {% for speaker in site.award-winners %}
+            <li class="speaker speaker--past">
+                <a href="#" rel="noopener" target="_blank">
+                    <img alt="{{ speaker.image-alt }}" class="speaker__image" src="{{ speaker.image }}"/>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>
+{% endif %}

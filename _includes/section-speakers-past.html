@@ -1,0 +1,21 @@
+{% if page.has-speakers-past == true %}
+<section class="section section--speakers {{ page.speakers-past-background-color }}">
+
+    <div class="section__content">
+
+        <h2 class="section__header">
+            {{ site.2019-past-speakers-header }}
+        </h2>
+
+        <ul class="listing listing--five-column">
+            {% for speaker in site.2019-past-speakers %}
+            <li class="speaker speaker--past">
+                <img alt="{{ speaker.image-alt }}" class="speaker__image" src="{{ speaker.image }}"/>
+            </li>
+            {% endfor %}
+        </ul>
+
+    </div>
+    
+</section>
+{% endif %}

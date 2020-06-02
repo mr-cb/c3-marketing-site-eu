@@ -1,0 +1,104 @@
+/*!
+ * Modals v10.1.2: Simple modal dialogue pop-up windows
+ * (c) 2017 Chris Ferdinandi
+ * MIT License
+ * http://github.com/cferdinandi/modals
+ */
+
+/**
+ * Modal windows
+ */
+
+/* line 4, /Users/cferdinandi/Sites/modals/src/sass/components/_modals.scss */
+
+.modal__trigger {
+  text-decoration: none;
+  color: $charcoal-400;
+}
+
+.modal {
+  background-color: $white;
+  border: 1px solid $charcoal-200;
+  border-radius: 4px;
+  display: none;
+  max-width: 100%;
+  padding: 16px;
+  visibility: hidden;
+  z-index: $index-5;
+}
+
+/* line 19, /Users/cferdinandi/Sites/modals/src/sass/components/_modals.scss */
+.modal.active {
+  display: block;
+  height: 100%;
+  left: 0;
+  max-height: 100%;
+  overflow: auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+  visibility: visible;
+  -webkit-overflow-scrolling: touch;
+  padding: 32px;
+  max-width: 768px;
+  height: auto;
+  margin: 32px auto;
+}
+
+/**
+ * Modal background
+ */
+
+/* line 63, /Users/cferdinandi/Sites/modals/src/sass/components/_modals.scss */
+
+.modal-bg {
+  background-color: $charcoal-400;
+  bottom: 0;
+  position: absolute;
+  left: 0;
+  opacity: 1;
+  right: 0;
+  top: 0;
+  z-index: $index-4;
+  opacity: 0.9;
+}
+
+/**
+ * Close button
+ */
+
+/* line 78, /Users/cferdinandi/Sites/modals/src/sass/components/_modals.scss */
+
+.close {
+  color: $charcoal-400;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  text-decoration: none;
+  display: block;
+  background-color: $white;
+  padding: 16px;
+  border: solid 1px $charcoal-400;
+  text-align: center;
+}
+
+/* line 86, /Users/cferdinandi/Sites/modals/src/sass/components/_modals.scss */
+.close:hover {
+  color: $charcoal-400;
+  cursor: pointer;
+}
+
+.js-modal-trigger--active,
+.js-modal-trigger--inactive {
+  border: solid 2px transparent;
+  border-radius: 4px;
+}
+
+.js-modal-trigger--active:hover {
+  border: solid 2px $cb-primary-400;
+  cursor: pointer;
+}
+
+.js-modal-trigger--inactive:hover {
+  border: solid 2px transparent;
+}

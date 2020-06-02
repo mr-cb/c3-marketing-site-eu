@@ -1,0 +1,34 @@
+{% if page.has-speakers-keynote == true %}
+<section class="block block--speakers {{ page.speakers-keynotes-background-color }}">
+  <div class="block__content">
+    <h2 class="block__header">
+      {{ site.2020-keynote-speakers-header }}
+    </h2>
+    <ul class="listing listing--three-column">
+      {% comment %} 
+      Displays all speakers in the 2020 Keynoe Speakers collection
+      {% endcomment %} 
+      {% for speaker in site.2020-keynote-speakers %}
+      <li class="speaker speaker--keynote">
+        <img
+          alt="{{ speaker.image-alt }}"
+          class="speaker__image"
+          src="{{ speaker.image }}"
+        />
+        <div class="speaker__details">
+          <h3 class="speaker__name">
+            {{ speaker.name }}
+          </h3>
+          <p class="speaker__title">
+            {{ speaker.title }}
+          </p>
+          <p class="speaker__company">
+            {{ speaker.company }}
+          </p>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+{% endif %}

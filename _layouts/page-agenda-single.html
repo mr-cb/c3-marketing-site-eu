@@ -1,0 +1,92 @@
+---
+layout: default
+---
+
+<!-- page: agenda single -->
+<section class="block">
+    <div class="container">
+        <div class="agenda__event-modal">
+            <button class="close" data-modal-close="">
+                <a href="/agenda">
+                    <i class="fas fa-map-marker-alt">
+                    </i>
+                    Back to Agenda
+                </a>
+            </button>
+            <button class="close" data-modal-close="">
+                Share
+                <a href="{{ page.venue.directions }}" rel="noopener" target="_blank">
+                    <i class="fas fa-map-marker-alt">
+                    </i>
+                    {{ page.url }}
+                </a>
+            </button>
+            <div class="agenda__event-details">
+                <div class="agenda__event-date">
+                    <p>
+                        <i class="fas fa-clock">
+                        </i>
+                        {{ page.event.date | date: "%A, %B %d" }}
+                        <time datetime="{{ page.event.start-time }}">
+                            {{ page.event.start-time }}
+                        </time>
+                        -
+                        <time datetime="{{ page.event.end-time }}">
+                            {{ page.event.end-time }}
+                        </time>
+                    </p>
+                </div>
+                <div class="agenda__event-type">
+                    <p>
+                        <i class="fas fa-clock">
+                        </i>
+                        Type
+                    </p>
+                </div>
+            </div>
+            <div class="agenda__event-title">
+                <h2>
+                    {{ page.title }}
+                </h2>
+            </div>
+            <div class="agenda__event-summary">
+                {{ page.content | markdownify }}
+            </div>
+            <div class="agenda__event-speakers">
+                <h3>
+                    Speakers
+                </h3>
+                <ul class="listing listing__agenda-speakers">
+                    {% for speaker in page.speakers %}
+                    <li class="listing__agenda-speaker">
+                        <h4>
+                            {{ speaker.name }}
+                        </h4>
+                        <p class="italic">
+                            {{ speaker.title }}
+                        </p>
+                        <p>
+                            {{ speaker.company }}
+                        </p>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="agenda__event-venue">
+                <h3>
+                    Pre-Conference Workshops will take place at the:
+                </h3>
+                <p>
+                    {{ page.venue.name }}
+                </p>
+                <p>
+                    <a href="{{ page.venue.directions }}" rel="noopener" target="_blank">
+                        <i class="fas fa-map-marker-alt">
+                        </i>
+                        {{ page.venue.address }}
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>

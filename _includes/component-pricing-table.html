@@ -1,0 +1,30 @@
+<!-- component: pricing table -->
+<div class="pricing-table">
+    <ul class="listing listing--two-column">
+        {% for tier in page.pricing-table %}
+        <li class="pricing-table__item {% if tier.status == 'active' %} pricing-table__item--active {% else %} pricing-table__item--inactive {% endif %} {{ tier.type }}">
+            {% if tier.status == 'active' %}
+            <a href="{{ site.registration-url }}" rel="noopener" target="_blank">
+                {% else %}
+                <a>
+                    {% endif %}
+                    <h3 class="pricing-table__header">
+                        {{ tier.header }}
+                    </h3>
+                    <div class="pricing-table__body wysiwyg">
+                        {{ tier.price | markdownify }}
+                    </div>
+                    <div class="pricing-table__registration">
+                        <span class="pricing-table__registration-icon">
+                            {{ tier.icon }}
+                        </span>
+                        <div class="pricing-table__registration-label wysiwyg">
+                            {{ tier.registration | markdownify }}
+                        </div>
+                    </div>
+                </a>
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>

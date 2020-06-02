@@ -1,0 +1,39 @@
+<!-- header -->
+<header class="site-header">
+    <nav class="navigation">
+        <!-- header logo -->
+        <div class="navigation__logo">
+            <a href="/">
+                <img src="/assets/images/c3-logo-blue.png" alt="C3 logo">
+                </img>
+            </a>
+        </div>
+        <!-- header links -->
+        <ul class="navigation__links">
+            {% for link in site.primary-navigation %}
+            <li>
+                <a class="button" href="{{ link.url }}">
+                    {{ link.title }}
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+        <!-- header buttons -->
+        <div class="navigation__buttons">
+            <!-- registration button -->
+            <div class="site-header__registration">
+                <a class="button button--primary" aria-label="Register for C3 2020 San Diegoß" href="{{ site.registration-url }}" rel="noopener" target="_blank">
+                    Register
+                </a>
+            </div>
+            <!-- mobile button -->
+            <button class="button button--secondary mobile-menu" aria-label="Toggle Sidebar Menu on Smaller Screen" id="my-button" type="button">
+                Menu
+                <i class="fas fa-bars">
+                </i>
+            </button>
+        </div>
+    </nav>
+</header>
+{% include section-hero.html %}
+{% include section-introduction.html %}

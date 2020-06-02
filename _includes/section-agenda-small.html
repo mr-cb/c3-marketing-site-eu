@@ -1,0 +1,24 @@
+{% if page.has-agenda-small == true %}
+<section class="agenda-small {{ page.agenda-small-background-color }}">
+    <div class="agenda-small__content">
+        <h2 class="agenda-small__header">
+            {{ site.agenda-small-header }}
+        </h2>
+        <ul class="agenda-small__days">
+            {% for date in site.agenda-small-dates %}
+            <li class="agenda-small__day listing__item wysiwyg">
+                <h3 class="agenda-small__day-header">
+                    {{ date.header }}
+                </h3>
+                <div class="agenda-small__day-body">
+                    {{ date.body | markdownify }}
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+        <a class="button button--primary" href="/agenda/">
+            View Full Agenda
+        </a>
+    </div>
+</section>
+{% endif %}

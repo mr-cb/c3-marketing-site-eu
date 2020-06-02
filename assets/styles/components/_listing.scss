@@ -1,0 +1,76 @@
+.listing {
+    display: grid;
+    grid-gap: 16px;
+
+    &--one-column,
+    &--two-column,
+    &--three-column {
+        grid-template-columns: 1fr;
+    }
+
+    &--four-column,
+    &--five-column {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__agenda-speakers {
+        margin-top: 16px;
+    }
+
+    &__item {
+        text-align: center;
+    }
+
+    &__header {
+        font-size: $font-size-4;
+    }
+
+    &__button {
+        margin-top: 32px;
+    }
+
+}
+
+@media screen and (min-width:699px) {
+    .listing {
+        &--two-column {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &--three-column {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        &--four-column {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        &--five-column {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+    }
+
+}
+
+@media screen and (min-width:1279px) {
+    .listing {
+        &--five-column {
+            grid-template-columns: repeat(5, 1fr);
+        }
+
+    }
+
+}
+
+.block--agenda-small .listing__item {
+    background-color: $white;
+    padding: 16px;
+}
+
+@media screen and (min-width:699px) {
+    .block--agenda-small .listing__item {
+        padding: 32px;
+    }
+
+}

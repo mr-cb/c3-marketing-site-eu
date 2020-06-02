@@ -1,0 +1,46 @@
+.italic {
+	font-style: italic;
+}
+
+.wysiwyg {
+	line-height: 1.6;
+}
+
+strong,
+.wysiwyg strong {
+	font-weight: 900;
+}
+
+em,
+.wysiwyg em {
+	font-style: italic;
+}
+
+.wysiwyg h2,
+.wysiwyg h3 {
+	margin-bottom: 8px;
+}
+
+.wysiwyg h2:not(:first-child),
+.wysiwyg h3:not(:first-child) {
+	margin-top: 40px;
+}
+
+.wysiwyg ul,
+.wysiwyg ol {
+	margin-left: 32px;
+	margin-top: 32px;
+	margin-bottom: 32px;
+}
+
+/*.wysiwyg p {
+	margin-bottom: 16px;
+}*/
+
+.wysiwyg a {
+	font-weight: 900;
+	color: $cb-primary-400;
+}
+.page-faqs .wysiwyg h3 {
+	color: $cb-primary-500;
+}

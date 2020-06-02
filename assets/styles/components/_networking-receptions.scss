@@ -1,0 +1,38 @@
+.networking {
+	padding: 32px 16px;
+	text-align: center;
+}
+
+.networking-receptions {
+	display: grid;
+	grid-gap: 16px;
+	grid-template-columns: 1fr;
+	padding: 32px 0;
+}
+
+.networking-reception {
+	&__image {
+		margin-bottom: 32px;
+	}
+
+	&__details {
+		text-align: left;
+	}
+
+	&__name {
+		margin-bottom: 16px;
+	}
+
+}
+
+@media screen and (min-width:959px) {
+	.networking {
+		padding: 64px 32px;
+	}
+
+	.networking-receptions {
+		grid-gap: 32px;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+}
